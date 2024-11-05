@@ -1,0 +1,333 @@
+:root {
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+  --brown-800: #854632;
+  --white: #ffffff;
+  --text-preset-1-size: 36px;
+  --text-preset: "Young Serif", serif;
+  --text-preset-2-size: 28px;
+  --text-preset-2: "Young Serif", serif;
+  --text-preset-3-size: 20px;
+  --text-preset-3: "Outfit", serif;
+  --text-preset-4-size: 16px;
+  --text-preset-4-line-height: 150%;
+  --text-preset-4: "Outfit", serif;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+header {
+  width: 100%;
+  min-height: 171px;
+  padding: 0;
+}
+
+.hero {
+  padding: 40px 32px 32px 32px;
+}
+
+.ingredients {
+  padding: 32px;
+}
+
+.instructions {
+  padding: 32px;
+}
+
+.instructions ol {
+  padding-left: 32px;
+}
+
+.hero-heading {
+  font-family: var(--text-preset);
+  font-size: var(--text-preset-1-size);
+  color: var(--stone-900);
+  margin-bottom: 24px;
+  font-weight: normal;
+}
+
+.hero-paragraph {
+  font-family: var(--text-preset-4);
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  color: var(--stone-600);
+}
+
+.preparation-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preparation-time-div {
+  background-color: var(--rose-50);
+  min-height: 196px;
+  width: 311px;
+  padding: 24px;
+}
+
+.preparation-time-div ul {
+  padding: 24px;
+}
+
+.preparation-heading {
+  font-family: var(--text-preset-3);
+  font-size: var(--text-preset-3-size);
+  color: var(--rose-800);
+}
+
+.preparation-li {
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+
+.preparation-li::marker {
+  color: var(--rose-800);
+}
+
+.preparation-strong,
+.preparation-span {
+  font-family: var(--text-preset-4);
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  color: var(--stone-600);
+}
+
+.ingredients ul {
+  padding-left: 32px;
+}
+
+.ingredients-heading {
+  font-family: var(--text-preset-2);
+  font-size: var(--text-preset-2-size);
+  color: var(--brown-800);
+  margin-bottom: 24px;
+  font-weight: normal;
+}
+
+.ingredients-span {
+  font-family: var(--text-preset-4);
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  color: var(--stone-600);
+}
+
+.ingredients-li {
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+
+.ingredients-li::marker {
+  color: var(--brown-800);
+}
+
+.instructions-heading {
+  font-family: var(--text-preset-2);
+  font-size: var(--text-preset-2-size);
+  color: var(--brown-800);
+  margin-bottom: 24px;
+  font-weight: normal;
+}
+
+.instructions-li {
+  margin-bottom: 8px;
+  padding-left: 16px;
+}
+
+.instructions-li::marker {
+  color: var(--brown-800);
+  font-family: var(--text-preset-4);
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  font-weight: bold;
+}
+
+.instructions-strong {
+  color: var(--stone-600);
+  font-family: var(--text-preset-4);
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  font-weight: bold;
+}
+
+.instructions-span {
+  color: var(--stone-600);
+  font-family: var(--text-preset-4);
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+}
+
+.nutrition {
+  padding: 32px;
+}
+
+.nutrition-heading {
+  font-family: var(--text-preset-2);
+  font-size: var(--text-preset-2-size);
+  color: var(--brown-800);
+  margin-bottom: 24px;
+  font-weight: normal;
+}
+
+.nutrition-paragraph {
+  margin-bottom: 24px;
+}
+
+.nutrition-paragraph,
+.label {
+  font-family: var(--text-preset-4);
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  color: var(--stone-600);
+}
+
+.info {
+  font-family: var(--text-preset-4);
+  font-size: var(--text-preset-4-size);
+  line-height: var(--text-preset-4-line-height);
+  font-weight: bold;
+  color: var(--brown-800);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  body {
+    background-color: var(--stone-100);
+    padding: 128px 48px;
+  }
+
+  .hero,
+  .preparation-time,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    background-color: var(--white);
+  }
+
+  .hero,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding-left: 40px;
+  }
+
+  .nutrition {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .header {
+    background-color: var(--white);
+    min-height: 300px;
+    width: 616px;
+  }
+
+  .header img {
+    min-height: 300px;
+    width: 536px;
+  }
+
+  .preparation-time-div {
+    min-height: 172px;
+    width: 536px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2500px) {
+  body {
+    background-color: var(--stone-100);
+    padding: 128px 352px;
+  }
+
+  .hero,
+  .preparation-time,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    background-color: var(--white);
+  }
+
+  .hero,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    padding-left: 40px;
+  }
+
+  .nutrition {
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .header {
+    background-color: var(--white);
+    min-height: 300px;
+    width: 616px;
+  }
+
+  .header img {
+    min-height: 300px;
+    width: 536px;
+  }
+
+  .preparation-time-div {
+    min-height: 172px;
+    width: 656px;
+  }
+}
